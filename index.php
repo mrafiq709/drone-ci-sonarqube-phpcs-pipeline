@@ -12,7 +12,7 @@ class importData
     private $interest;
 
    /**
-    *  Calculate the interest
+    *  Calculate the interest dfgdfg
     *
     * @param int $percent How many percentage of interest will be calculated
     * @return int
