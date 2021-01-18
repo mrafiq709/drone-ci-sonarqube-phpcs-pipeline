@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+steps:
+- name: code-analysisss
+  image: aosapps/drone-sonar-plugin
+  settings:
+    sonar_host:
+      from_secret: http://sonar.scuti.asia
+    sonar_token:
+      from_secret: 81c92b639c333b705827802bbc2ef94206ae6a8d
