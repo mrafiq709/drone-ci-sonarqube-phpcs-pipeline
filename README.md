@@ -1,0 +1,1 @@
+# drone-ci-sonarqube-phpcs-pipeline
