@@ -1,5 +1,7 @@
 <?php
 
+namespace ImportData;
+
 /**
  *  You can use this class for importing Excel, words and text data.
  */
@@ -23,5 +25,3 @@ class ImportData
     }
 
 }
-
-?>
