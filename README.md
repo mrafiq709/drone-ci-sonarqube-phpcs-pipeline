@@ -70,7 +70,7 @@ services:
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
 ```
-dorone server config(nginx: **/etc/nginx/con.d/drone.test.conf**):
+drone server config(nginx: **/etc/nginx/con.d/drone.test.conf**):
 ```
 upstream drone {
     server 127.0.0.1:8888;
