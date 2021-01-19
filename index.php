@@ -1,7 +1,9 @@
+<?php
+
 /**
  *  You can use this class for importing Excel, words and text data.
  */
-class ImportData
+class importData
 {
    /**
     *  Store the interest of the client
@@ -15,7 +17,7 @@ class ImportData
     * @param int $percent How many percentage of interest will be calculated
     * @return int
     */
-    public function calculateInterest($percent)
+    public function calculate_interest($percent)
     {
         return $percent;
     }
