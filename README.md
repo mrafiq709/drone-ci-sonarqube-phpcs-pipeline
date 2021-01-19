@@ -70,7 +70,7 @@ services:
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
 ```
-drone server config(nginx: **/etc/nginx/con.d/drone.test.conf**):
+drone server config(nginx: **/etc/nginx/conf.d/drone.test.conf**):
 ```
 upstream drone {
     server 127.0.0.1:8888;
@@ -92,7 +92,7 @@ server {
     access_log /var/log/nginx/drone.test.access.log;
 }
 ```
-sonarqube server config(nginx: **/etc/nginx/con.d/sonar.test.conf**):
+sonarqube server config(nginx: **/etc/nginx/conf.d/sonar.test.conf**):
 ```
 upstream sonar {
     server 127.0.0.1:9000;
