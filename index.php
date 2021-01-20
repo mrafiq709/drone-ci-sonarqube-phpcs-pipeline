@@ -17,11 +17,13 @@ class ImportData
     /**
      *  Calculate the interest dfgdfg
      *
-     * @param  int $percent How many percentage of interest will be calculated
+     * @param int $percent How many percentage of interest will be calculated
+     * 
      * @return int
      */
     public function calculateInterest($percent)
     {
-        return 0;
+        $test = 1 + $percent;
+        return $test;
     }
 }
