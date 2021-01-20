@@ -7,18 +7,19 @@ namespace ImportData;
  */
 class ImportData
 {
-   /**
-    *  Store the interest of the client
-    * @var int $interest
-    */
+    /**
+     *  Store the interest of the client
+     *
+     * @var integer $interest
+     */
     private $interest;
 
-   /**
-    *  Calculate the interest dfgdfg
-    *
-    * @param int $percent How many percentage of interest will be calculated
-    * @return int
-    */
+    /**
+     *  Calculate the interest dfgdfg
+     *
+     * @param  int $percent How many percentage of interest will be calculated
+     * @return int
+     */
     public function calculateInterest($percent)
     {
         return $percent;
