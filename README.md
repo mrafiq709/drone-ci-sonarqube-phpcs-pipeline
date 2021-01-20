@@ -142,4 +142,6 @@ steps:
     -Dsonar.projectVersion=${DRONE_TAG}
     -Dsonar.projectBaseDir=.
     -Dsonar.sourceEncoding=UTF-8
+    -Dsonar.buildbreaker.skip=false
+    -Dsonar.qualitygate.wait=true
 ```
