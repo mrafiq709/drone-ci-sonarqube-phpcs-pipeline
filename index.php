@@ -22,6 +22,6 @@ class ImportData
      */
     public function calculateInterest($percent)
     {
-        return $percent;
+        return 0;
     }
 }
