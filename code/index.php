@@ -1,4 +1,4 @@
-<?php
+ok<?php
 
 namespace ImportData;
 

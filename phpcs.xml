@@ -7,7 +7,7 @@
 <!-- <rule ref="PSR12"/> -->
 <!-- <rule ref="Squiz"/> -->
 <!-- <rule ref="MySource"/> -->
-<file>index.php</file> 
+<file>./code/</file> 
 
 <rule ref="Generic.Classes.DuplicateClassName"/>
 <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
