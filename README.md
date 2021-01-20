@@ -136,7 +136,7 @@ steps:
   - >
     sonar-scanner
     -Dsonar.host.url=sonar_host
-    -Dsonar.login=login_key
+    -Dsonar.login=soanrqube_login_token
     -Dsonar.projectKey=${DRONE_REPO_OWNER}:${DRONE_REPO_NAME}
     -Dsonar.projectName=${DRONE_REPO_OWNER}:${DRONE_REPO_NAME}
     -Dsonar.projectVersion=${DRONE_TAG}
