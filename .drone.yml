@@ -16,7 +16,7 @@ steps:
     -Dsonar.projectKey=${DRONE_REPO_OWNER}:${DRONE_REPO_NAME}
     -Dsonar.projectName=${DRONE_REPO_OWNER}:${DRONE_REPO_NAME}
     -Dsonar.projectVersion=${DRONE_TAG}
-    -Dsonar.projectBaseDir=.
+    -Dsonar.projectBaseDir=./index.php
     -Dsonar.sourceEncoding=UTF-8
     -Dsonar.buildbreaker.skip=false
     -Dsonar.qualitygate.wait=true
