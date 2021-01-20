@@ -5,7 +5,7 @@ steps:
   image: herloct/phpcs
   commands:
   - >
-    phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./
+    phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./index.php
 - name: sonarqube
   image: sonarsource/sonar-scanner-cli
   commands:
