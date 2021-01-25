@@ -8,7 +8,7 @@
 <!-- <rule ref="Squiz"/> -->
 <!-- <rule ref="MySource"/> -->
 <!-- <rule ref="Generic"/> -->
-<rule ref="EcCube"/>
+<!-- <rule ref="EcCube"/> -->
 
 <file>./code/</file> 
 

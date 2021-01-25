@@ -3,8 +3,8 @@ name: default
 steps:
 - name: psr-check
   build:
-    context: ./
-    dockerfile: app.dockerfile
+    context: ./docker-phpcs
+    dockerfile: Dockerfile
   commands:
   - >
     phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
