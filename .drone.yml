@@ -2,9 +2,7 @@ kind: pipeline
 name: default
 steps:
 - name: psr-check
-  build:
-    context: ./docker-phpcs
-    dockerfile: Dockerfile
+  image: herloct/phpcs
   commands:
   - >
     phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
