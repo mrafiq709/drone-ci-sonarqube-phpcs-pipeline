@@ -8,7 +8,7 @@ steps:
     curl -L https://github.com/squizlabs/PHP_CodeSniffer/releases/download/3.3.2/phpcs.phar > /usr/local/bin/phpcs \
     && chmod +x /usr/local/bin/phpcs \
     && rm -rf /var/cache/apk/* /var/tmp/* /tmp/* \
-    && phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
+    && phpcs -i
 - name: sonarqube
   image: sonarsource/sonar-scanner-cli
   commands:
