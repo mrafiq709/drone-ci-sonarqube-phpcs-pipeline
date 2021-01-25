@@ -2,10 +2,13 @@ kind: pipeline
 name: default
 steps:
 - name: psr-check
-  image: herloct/phpcs
+  image: php:7.1.5-alpine
   commands:
   - >
-    phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
+    curl -L https://github.com/squizlabs/PHP_CodeSniffer/releases/download/$PHPCS_VERSION/phpcs.phar > /usr/local/bin/phpcs \
+    && chmod +x /usr/local/bin/phpcs \
+    && rm -rf /var/cache/apk/* /var/tmp/* /tmp/*
+    && phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
 - name: sonarqube
   image: sonarsource/sonar-scanner-cli
   commands:
