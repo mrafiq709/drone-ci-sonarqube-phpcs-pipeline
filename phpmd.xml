@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Laravel and similar phpmd ruleset"
+    xmlns="http://pmd.sf.net/ruleset/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
+    xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
+  <description>
+    Inspired by https://github.com/phpmd/phpmd/issues/137
+    using http://phpmd.org/documentation/creating-a-ruleset.html
+  </description>
+
+  <!-- se importa naming y se excluye ShortVariable para ser ajustada despues. -->
+  <rule ref="rulesets/naming.xml">
+      <exclude name="ShortVariable"/>
+  </rule>
+  <rule ref="rulesets/naming.xml/ShortVariable"
+        since="0.2"
+        message="Avoid variables with short names like {0}. Configured minimum length is {2}."
+        class="PHPMD\Rule\Naming\ShortVariable"
+        externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable">
+      <priority>3</priority>
+      <properties>
+          <property name="minimum" description="Minimum length for a variable, property or parameter name" value="2"/>
+          <property name="exceptions" value="" />
+      </properties>
+  </rule>
+</ruleset>
