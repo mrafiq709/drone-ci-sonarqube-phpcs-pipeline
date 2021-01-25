@@ -2,10 +2,12 @@ kind: pipeline
 name: default
 steps:
 - name: psr-check
-  # image: herloct/phpcs
+  build:
+    context: ./
+    dockerfile: app.dockerfile
   commands:
   - >
-    ./vendor/bin/phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
+    phpcs -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
 - name: sonarqube
   image: sonarsource/sonar-scanner-cli
   commands:
