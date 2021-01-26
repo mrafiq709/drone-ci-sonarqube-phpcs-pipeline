@@ -31,7 +31,7 @@ class ImportData
      * 
      * @return int
      */
-    protected function _calculateInterest($percent)
+    public function _calculateInterest($percent)
     {
         for ($i = 0; $i < 10; $i++) { 
             # code...
