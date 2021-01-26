@@ -33,21 +33,21 @@ class ImportData
      */
     private function _calculateInterest($percent)
     {
-        for ($i = 0; $i < 10; $i++) { 
-            # code...
-        }
+        // for ($i = 0; $i < 10; $i++) { 
+        //     # code...
+        // }
 
-        switch ($percent) {
-            case 'value':
-                # code...
-                break;
+        // switch ($percent) {
+        //     case 'value':
+        //         # code...
+        //         break;
             
-            default:
-                # code...
-                break;
-        }
+        //     default:
+        //         # code...
+        //         break;
+        // }
 
-        $test = 1 + $percent;
+        // $test = 1 + $percent;
         
         return 0;
     }
