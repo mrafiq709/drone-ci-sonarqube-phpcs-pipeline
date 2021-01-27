@@ -35,7 +35,6 @@ class ImportData
     public function calculateMe($percent)
     {
         $myname = 'Expert Developer';
-        return;
     }
 }
 
