@@ -6,6 +6,11 @@ steps:
   commands:
   - >
     php phpcs.phar -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
+- name: PHPMD
+  image: phpqa/phpmd
+  commands:
+  - >
+    vendor/bin/phpmd code text phpmd.xml
 - name: sonarqube
   image: sonarsource/sonar-scanner-cli
   commands:
