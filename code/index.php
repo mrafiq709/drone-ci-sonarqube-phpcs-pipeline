@@ -1,4 +1,3 @@
-dfdfgkdf
 <?php
 /**
  * Template File Doc Comment
@@ -30,12 +29,14 @@ class ImportData
      *
      * @param int $percent How many percentage of interest will be calculated 
      * 
-     * @return int
+     * @return void
      */
     public function calculateMe($percent)
     {
         $myname = 'Expert Developer';
     }
+
+    public $i;
 }
 
 
