@@ -25,6 +25,13 @@ class ImportData
     private $newOk;
 
     /**
+     *  Store the interest of the client
+     *
+     * @var integer $i
+     */
+    private $i;
+
+    /**
      *  Calculate the interest dfgdfg
      *
      * @param int $percent How many percentage of interest will be calculated 
@@ -35,8 +42,6 @@ class ImportData
     {
         $myname = 'Expert Developer';
     }
-
-    public $i;
 }
 
 
