@@ -16,7 +16,7 @@ namespace ImportData;
  */
 class ImportData
 {
-    const HHH_ok = 'okkjfgfdkhg';
+    const HHH = 'okkjfgfdkhg';
     /**
      *  Store the interest of the client
      *
