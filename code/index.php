@@ -27,9 +27,9 @@ class ImportData
     /**
      *  Store the interest of the client
      *
-     * @var integer $i
+     * @var integer $hi
      */
-    private $i;
+    private $hi;
 
     /**
      *  Calculate the interest dfgdfg
