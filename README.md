@@ -145,3 +145,19 @@ steps:
     -Dsonar.buildbreaker.skip=false
     -Dsonar.qualitygate.wait=true
 ```
+For custom Rule PHCS:
+```
+kind: pipeline
+name: default
+steps:
+- name: PHPCS
+  image: php:7.1.3-fpm
+  commands:
+  - >
+    php phpcs.phar -d memory_limit=500M --standard=./phpcs.xml --ignore=/vendor/ ./code/
+- name: PHPMD
+  image: phpqa/phpmd
+  commands:
+  - >
+    vendor/bin/phpmd code text phpmd.xml
+```
